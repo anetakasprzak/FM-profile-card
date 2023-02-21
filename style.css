@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Kumbh Sans", sans-serif;
+  height: 100vh;
+  font-size: 18px;
+  background-color: #19a1ae;
+  position: relative;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 375px) {
+  body {
+    height: auto;
+    margin-top: 123px;
+    padding: 24px;
+    overflow: hidden;
+  }
+}
+
+.ball--1 {
+  width: 978px;
+  position: absolute;
+  left: -204.71px;
+  top: -669.84px;
+  z-index: 1;
+}
+
+@media screen and (max-width: 375px) {
+  .ball--1 {
+    width: 622px;
+    position: absolute;
+    left: -400px;
+    top: -500px;
+  }
+}
+
+.ball--2 {
+  width: 978px;
+  position: absolute;
+  z-index: 1;
+  left: 700px;
+  top: 395px;
+}
+
+@media screen and (max-width: 375px) {
+  .ball--2 {
+    width: 622px;
+    left: 150px;
+    top: 220px;
+  }
+}
+
+.card-component {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 25px 15px rgba(0, 0, 0, 0.1);
+  width: 350px;
+  height: 374px;
+  background-color: #fff;
+  z-index: 100;
+}
+
+@media screen and (max-width: 375px) {
+  .card-component {
+    width: 326px;
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: -50px;
+  /* transform: translateY(-33%); */
+  gap: 10px;
+}
+
+.profile-photo img {
+  border-radius: 50%;
+  border: 5px solid white;
+  width: 96px;
+  height: 96px;
+}
+
+.person-box {
+  display: flex;
+  align-items: center;
+  gap: 8.5px;
+}
+
+.name {
+  font-weight: 700;
+  line-height: 22px;
+  color: #2e3349;
+}
+
+.age {
+  font-weight: 400;
+  line-height: 22px;
+  color: #6b7082;
+}
+
+.location {
+  font-size: 14px;
+  color: #6b7082;
+  margin-bottom: 12px;
+  line-height: 17px;
+}
+
+.profile-box {
+  display: flex;
+  border-top: 1px solid #e8e9ec;
+  width: 100%;
+  justify-content: space-evenly;
+  padding-left: 47px;
+  padding-right: 54px;
+  padding-top: 24px;
+}
+
+@media screen and (max-width: 375px) {
+  .profile-box {
+    gap: 45px;
+    padding-left: 41px;
+    padding-right: 52px;
+    padding-top: 24px;
+  }
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  /* gap: 10px; */
+  align-items: center;
+}
+
+.number {
+  font-weight: 700;
+  line-height: 22px;
+  color: #2e3349;
+  margin-bottom: 4px;
+}
+
+.item {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 1.5px;
+  color: #6b7082;
+}
